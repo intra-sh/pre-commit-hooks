@@ -3,3 +3,4 @@
   description: automatically generate file
   entry: bash -c "makepkg --printsrcinfo > $(git rev-parse --show-toplevel)/.TEST"
   language: system
+  always_run: true
