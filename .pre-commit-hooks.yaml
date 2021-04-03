@@ -1,6 +1,6 @@
 - id: pkgbuild-create-and-add-srcinfo
   name: Build .SRCINFO for pkgbuild operations
   description: automatically generate file
-  entry: bash -c "makepkg --printsrcinfo > $(git rev-parse --show-toplevel)/.TEST"
+  entry: bash -c "makepkg --printsrcinfo > $(git rev-parse --show-toplevel)/.SRCINFO && git add .SRCINFO"
   language: system
   always_run: true
